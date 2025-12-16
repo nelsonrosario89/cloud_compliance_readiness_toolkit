@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1e3a5f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2d5a87;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="boxGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f8f9fa;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="900" height="600" fill="#f0f4f8"/>
+  
+  <!-- Title -->
+  <rect x="0" y="0" width="900" height="50" fill="url(#headerGrad)"/>
+  <text x="450" y="32" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white" text-anchor="middle">Cloud Compliance Readiness Toolkit – Architecture</text>
+  
+  <!-- API Layer -->
+  <rect x="300" y="70" width="300" height="80" rx="8" fill="url(#boxGrad)" stroke="#2d5a87" stroke-width="2" filter="url(#shadow)"/>
+  <text x="450" y="100" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1e3a5f" text-anchor="middle">FastAPI Backend</text>
+  <text x="450" y="120" font-family="Arial, sans-serif" font-size="11" fill="#555" text-anchor="middle">/health  /frameworks  /controls  /labs</text>
+  <text x="450" y="135" font-family="Arial, sans-serif" font-size="11" fill="#555" text-anchor="middle">/projects  /evidence  /tasks</text>
+  
+  <!-- Arrow down -->
+  <path d="M450 150 L450 175 L440 165 M450 175 L460 165" stroke="#1e3a5f" stroke-width="2" fill="none"/>
+  
+  <!-- Routes Layer -->
+  <rect x="50" y="185" width="160" height="70" rx="6" fill="url(#boxGrad)" stroke="#4a90d9" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="130" y="215" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e3a5f" text-anchor="middle">frameworks.py</text>
+  <text x="130" y="235" font-family="Arial, sans-serif" font-size="10" fill="#666" text-anchor="middle">APIRouter</text>
+  
+  <rect x="230" y="185" width="160" height="70" rx="6" fill="url(#boxGrad)" stroke="#4a90d9" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="310" y="215" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e3a5f" text-anchor="middle">controls.py</text>
+  <text x="310" y="235" font-family="Arial, sans-serif" font-size="10" fill="#666" text-anchor="middle">APIRouter</text>
+  
+  <rect x="410" y="185" width="160" height="70" rx="6" fill="url(#boxGrad)" stroke="#4a90d9" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="490" y="215" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e3a5f" text-anchor="middle">labs.py</text>
+  <text x="490" y="235" font-family="Arial, sans-serif" font-size="10" fill="#666" text-anchor="middle">APIRouter</text>
+  
+  <rect x="590" y="185" width="160" height="70" rx="6" fill="url(#boxGrad)" stroke="#4a90d9" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="670" y="215" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e3a5f" text-anchor="middle">evidence.py</text>
+  <text x="670" y="235" font-family="Arial, sans-serif" font-size="10" fill="#666" text-anchor="middle">APIRouter</text>
+  
+  <rect x="770" y="185" width="110" height="70" rx="6" fill="url(#boxGrad)" stroke="#4a90d9" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="825" y="215" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e3a5f" text-anchor="middle">tasks.py</text>
+  <text x="825" y="235" font-family="Arial, sans-serif" font-size="10" fill="#666" text-anchor="middle">APIRouter</text>
+  
+  <!-- Arrow down to DB layer -->
+  <path d="M450 265 L450 295 L440 285 M450 295 L460 285" stroke="#1e3a5f" stroke-width="2" fill="none"/>
+  
+  <!-- Database Layer -->
+  <rect x="200" y="305" width="220" height="90" rx="8" fill="url(#boxGrad)" stroke="#27ae60" stroke-width="2" filter="url(#shadow)"/>
+  <text x="310" y="335" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#1e3a5f" text-anchor="middle">db.py</text>
+  <text x="310" y="355" font-family="Arial, sans-serif" font-size="10" fill="#555" text-anchor="middle">SQLAlchemy Engine</text>
+  <text x="310" y="375" font-family="Arial, sans-serif" font-size="10" fill="#555" text-anchor="middle">Session Management</text>
+  
+  <rect x="480" y="305" width="220" height="90" rx="8" fill="url(#boxGrad)" stroke="#27ae60" stroke-width="2" filter="url(#shadow)"/>
+  <text x="590" y="335" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#1e3a5f" text-anchor="middle">models.py</text>
+  <text x="590" y="355" font-family="Arial, sans-serif" font-size="10" fill="#555" text-anchor="middle">Framework | Control | Lab</text>
+  <text x="590" y="375" font-family="Arial, sans-serif" font-size="10" fill="#555" text-anchor="middle">Project | Evidence | Task</text>
+  
+  <!-- Arrow down to SQLite -->
+  <path d="M450 395 L450 425 L440 415 M450 425 L460 415" stroke="#1e3a5f" stroke-width="2" fill="none"/>
+  
+  <!-- SQLite -->
+  <ellipse cx="450" cy="470" rx="100" ry="35" fill="#f39c12" stroke="#d68910" stroke-width="2" filter="url(#shadow)"/>
+  <text x="450" y="475" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">SQLite DB</text>
+  
+  <!-- Control Catalog (side) -->
+  <rect x="50" y="420" width="180" height="80" rx="8" fill="#e8f4fd" stroke="#3498db" stroke-width="2" filter="url(#shadow)"/>
+  <text x="140" y="450" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e3a5f" text-anchor="middle">control_catalog</text>
+  <text x="140" y="468" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e3a5f" text-anchor="middle">_skeleton.yaml</text>
+  <text x="140" y="488" font-family="Arial, sans-serif" font-size="10" fill="#555" text-anchor="middle">Framework → Control → Lab</text>
+  
+  <!-- Arrow from YAML to DB -->
+  <path d="M230 460 L340 460" stroke="#3498db" stroke-width="1.5" stroke-dasharray="5,3" fill="none"/>
+  <text x="285" y="450" font-family="Arial, sans-serif" font-size="9" fill="#3498db" text-anchor="middle">seeds</text>
+  
+  <!-- AWS Labs (side) -->
+  <rect x="670" y="420" width="180" height="80" rx="8" fill="#fef3e2" stroke="#e67e22" stroke-width="2" filter="url(#shadow)"/>
+  <text x="760" y="448" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e3a5f" text-anchor="middle">AWS Lab Scripts</text>
+  <text x="760" y="468" font-family="Arial, sans-serif" font-size="10" fill="#555" text-anchor="middle">CloudTrail | S3 | IAM</text>
+  <text x="760" y="485" font-family="Arial, sans-serif" font-size="10" fill="#555" text-anchor="middle">MFA | Config Rules</text>
+  
+  <!-- Arrow from Labs to Evidence -->
+  <path d="M760 420 L760 270 L750 280 M760 270 L770 280" stroke="#e67e22" stroke-width="1.5" stroke-dasharray="5,3" fill="none"/>
+  <text x="780" y="345" font-family="Arial, sans-serif" font-size="9" fill="#e67e22" text-anchor="middle" transform="rotate(-90 780 345)">evidence</text>
+  
+  <!-- Legend -->
+  <rect x="50" y="530" width="800" height="55" rx="5" fill="#fff" stroke="#ddd" stroke-width="1"/>
+  <text x="70" y="550" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#333">Legend:</text>
+  <rect x="130" y="540" width="15" height="15" fill="#2d5a87"/>
+  <text x="150" y="552" font-family="Arial, sans-serif" font-size="10" fill="#555">API Layer</text>
+  <rect x="230" y="540" width="15" height="15" fill="#4a90d9"/>
+  <text x="250" y="552" font-family="Arial, sans-serif" font-size="10" fill="#555">Routes</text>
+  <rect x="310" y="540" width="15" height="15" fill="#27ae60"/>
+  <text x="330" y="552" font-family="Arial, sans-serif" font-size="10" fill="#555">Data Layer</text>
+  <rect x="410" y="540" width="15" height="15" fill="#f39c12"/>
+  <text x="430" y="552" font-family="Arial, sans-serif" font-size="10" fill="#555">Storage</text>
+  <rect x="500" y="540" width="15" height="15" fill="#3498db"/>
+  <text x="520" y="552" font-family="Arial, sans-serif" font-size="10" fill="#555">Config</text>
+  <rect x="580" y="540" width="15" height="15" fill="#e67e22"/>
+  <text x="600" y="552" font-family="Arial, sans-serif" font-size="10" fill="#555">External</text>
+  <text x="700" y="570" font-family="Arial, sans-serif" font-size="9" fill="#888">SOC 2 | ISO 27001 | PCI DSS</text>
+</svg>
