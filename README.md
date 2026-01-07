@@ -200,8 +200,7 @@ engagement, collect evidence, and track remediation.
 
 ---
 
-## How This Maps to Fortreum's Role
-
+## How This Maps
 This toolkit is designed to mirror key responsibilities from Fortreum's
 GRC Engineering and Advisory roles:
 
