@@ -201,8 +201,7 @@ engagement, collect evidence, and track remediation.
 ---
 
 ## How This Maps
-This toolkit is designed to mirror key responsibilities from Fortreum's
-GRC Engineering and Advisory roles:
+This toolkit is designed to mirror key responsibilities for GRC Engineering and Advisory roles:
 
 - **Control mapping & inventory**
   - `/frameworks`, `/controls`, and `/labs` demonstrate the ability to
